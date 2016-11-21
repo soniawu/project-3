@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project-3</title>
+    <link rel="stylesheet" media="screen" href="css/screen.css" />
+  </head>
+
+  <body>
+    <h1>This is to find City from zip code</h1>
+    <section id="cityZip">
+    <form id="cityZip-form" name="cityZip-form" method="get" action="#null">
+      <label for="zip">Enter the zip code here:</label>
+      <input id="zip" type="text" name="zip" />
+      <input id="cityZip-submit" type="submit" name="cityZip-submit"/>
+    </form>
+    </section>
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy9ABXqjK2M1y60Y-T20butYMIcRx_Pgw"></script>
+    <script src="js/zipPlaces.js"></script>
+    
+  </body>
+</html>
