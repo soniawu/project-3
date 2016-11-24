@@ -11,12 +11,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
  
 /* Optional: Makes the sample page fill the window. */
 html, body {
+  font-size: 15px;
+  line-height: 30px;
   height: 100%;
   margin: 0;
   padding: 0;
 }
+h1 {
+  font-size: 40px;
+  line-height: 80px;
+}
 #map {
-  width: 80%;
-  height: 80%;
+  width: 80vw;
+  height: 80vw;
+}
+#cityZip-submit {
+  display: block;
 }
    
