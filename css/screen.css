@@ -9,21 +9,43 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
  
-/* Optional: Makes the sample page fill the window. */
+/* 16px minor third/1.2 */
 html, body {
-  font-size: 15px;
-  line-height: 30px;
+  font-family: verdana, geneva, sans-serif;
+  font-size: 1em;    /* 16px 1em @ 16px */
+  line-height: 1.2em; /* 1.2 grid line, 19.2px 1.2em @ 16px */
   height: 100%;
   margin: 0;
   padding: 0;
 }
 h1 {
-  font-size: 40px;
-  line-height: 80px;
+  font-size: 2.074em; /* 33.178px 2.074em @ 16px */
+  line-height: 1.2em; /* 1.2 grid line, 39.814px 1.2em @ 33.178px */
+}
+#cityZip {
+  background-color: #D9D9D9;
+  padding: 6.5px 2px;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+#cityInfo {
+  color: #0981C9;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+#dayInfo {
+  color: #05542E;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#wInfo {
+  color: #062A8B;
+  padding-top: 2px;
+  padding-bottom: 5px;
 }
 #map {
-  width: 80vw;
-  height: 80vw;
+  width: 100vw;
+  height: 100vw;
 }
 #cityZip-submit {
   display: block;
