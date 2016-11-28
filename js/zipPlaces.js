@@ -5,10 +5,11 @@ $.noConflict();
      // console.log('I am here');
        $('#cityZip-form').on('submit', function(event) {
         event.preventDefault();
+        $('.error').text('');
        // console.log('got submitted'); 
         var zip = $('#zip').val();
         var url = 'http://api.zippopotam.us/us/' + zip;
-        $.get(url,
+        $.get(url).done(
           function(data,json) {
                   
           if (data != null) {
@@ -71,7 +72,7 @@ $.noConflict();
             console.log('Invalid zip code');
           } 
           }
-        )
+        ).fail(function() {$('.error').text('Invalid zip code');})
       })
     }
     )
