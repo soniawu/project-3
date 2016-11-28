@@ -50,4 +50,8 @@ h1 {
 #cityZip-submit {
   display: block;
 }
+.error {
+  font-size: 15px;
+  color: red;
+}
    
