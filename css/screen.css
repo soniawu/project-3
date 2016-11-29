@@ -17,6 +17,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: gray;
 }
 h1 {
   font-size: 2.074em; /* 33.178px 2.074em @ 16px */
@@ -54,4 +55,17 @@ h1 {
   font-size: 15px;
   color: red;
 }
+
+@media screen and (min-width: 31.25em)/*500px / 16px*/{
+  
+#map {
+  width: 80%;
+  height: 70%;
+  margin: .6em 10%;
+}
+
+p {
+  padding-left: 10%
+}
+}   
    
