@@ -51,7 +51,7 @@ $.noConflict();
               consol.log('error');
             }})
             
-          var sSUrl = 'http://api.wunderground.com/api/5c122fcc2f912983/conditions/q/'+stateAB+'/'+city+'.json';
+          var sSUrl = 'https://api.wunderground.com/api/5c122fcc2f912983/conditions/q/'+stateAB+'/'+city+'.json';
           $.get(sSUrl,
           function(data,json){
                 
