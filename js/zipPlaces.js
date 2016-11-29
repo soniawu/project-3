@@ -43,7 +43,7 @@ $.noConflict();
               var sunriseM = data.moon_phase.sunrise.minute;
               var sunsetH = data.moon_phase.sunset.hour - 12;
               var sunsetM = data.moon_phase.sunset.minute;
-              var dayInfoStr = 'In ' + city + ' Sunrise is at ' + sunriseH  + ':' + sunriseM + 'A.M. Sunset is at ' + sunsetH + ':' + sunsetM + ' P.M.';
+              var dayInfoStr = 'In ' + city + ' Sunrise is at ' + sunriseH  + ':' + sunriseM + ' A.M. Sunset is at ' + sunsetH + ':' + sunsetM + ' P.M.';
               $('#dayInfo').text(dayInfoStr);
             }
             else
