@@ -8,7 +8,7 @@ $.noConflict();
         $('.error').text('');
        // console.log('got submitted'); 
         var zip = $('#zip').val();
-        var url = 'https://api.zippopotam.us/us/' + zip;
+        var url = 'http://api.zippopotam.us/us/' + zip;
         $.get(url).done(
           function(data,json) {
                   
@@ -33,7 +33,7 @@ $.noConflict();
             map:map
           });
           
-          var sUrl = 'https://api.wunderground.com/api/5c122fcc2f912983/astronomy/q/'+stateAB+'/'+city+'.json';
+          var sUrl = 'http://api.wunderground.com/api/5c122fcc2f912983/astronomy/q/'+stateAB+'/'+city+'.json';
           $.get(sUrl,
           function(data,json){
             
@@ -51,7 +51,7 @@ $.noConflict();
               consol.log('error');
             }})
             
-          var sSUrl = 'https://api.wunderground.com/api/5c122fcc2f912983/conditions/q/'+stateAB+'/'+city+'.json';
+          var sSUrl = 'http://api.wunderground.com/api/5c122fcc2f912983/conditions/q/'+stateAB+'/'+city+'.json';
           $.get(sSUrl,
           function(data,json){
                 
