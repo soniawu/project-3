@@ -9,19 +9,18 @@
   <body>
   
     <h1>Locate city and city conditions from zip code.</h1>
-    <section id="cityZip">
-      <form id="cityZip-form" name="cityZip-form" method="get" action="#null">
+    <section id="city-zip">
+      <form id="city-zip-form" name="city-zip-form" method="get" action="#null">
         <label for="zip">Enter the zip code here:</label>
         <input id="zip" type="text" name="zip" />
-        <span class="error"></span>
-        <input id="cityZip-submit" type="submit" name="cityZip-submit" value="Find the city" />
+        <span id="zip-error"></span>
+        <input id="city-zip-submit" type="submit" name="city-zip-submit" value="Find the city" />
       </form>
-      <p id="cityInfo"></p>
-      <p id="dayInfo"></p>
-      <p id="wInfo"></p>
+      <p id="city-info"></p>
+      <p id="day-info"></p>
+      <p id="w-info"></p>
     </section>
-    <div id="map"></div>
- 
+    <div id="map"></div> 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy9ABXqjK2M1y60Y-T20butYMIcRx_Pgw"></script>

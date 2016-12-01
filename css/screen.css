@@ -1,4 +1,4 @@
- /* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -6,9 +6,6 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable*/
 
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
- 
 /* 16px minor third/1.2 */
 html, body {
   font-family: verdana, geneva, sans-serif;
@@ -23,49 +20,48 @@ h1 {
   font-size: 2.074em; /* 33.178px 2.074em @ 16px */
   line-height: 1.2em; /* 1.2 grid line, 39.814px 1.2em @ 33.178px */
 }
-#cityZip {
+#city-zip {
   background-color: #D9D9D9;
-  padding: 6.5px 2px;
+  padding: 0.406em 0.125em;  /* 6.5px 0.406em @ 16px, 2px 0.125em @ 16px */
   margin-bottom: 0;
   margin-right: 0;
 }
-#cityInfo {
+#city-info {
   color: #0981C9;
-  padding-top: 5px;
-  padding-bottom: 2px;
+  padding-top: 0.313em;     /* 5px 0.313em @ a6px */
+  padding-bottom: 0.125em;  /* 2px 0.125em @ 16px */
 }
-#dayInfo {
+#day-info {
   color: #05542E;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 0.125em;     /* 2px 0.125em @ 16px */
+  padding-bottom: 0.125em;  /* 2px 0.125em @ 16px */
 }
-#wInfo {
+#w-info {
   color: #062A8B;
-  padding-top: 2px;
-  padding-bottom: 5px;
+  padding-top: 0.125em;     /* 2px 0.125em @ 16px */
+  padding-bottom: 0.313em;  /* 5px 0.313em @ a6px */
 }
 #map {
   width: 100vw;
   height: 100vw;
 }
-#cityZip-submit {
+#city-zip-submit {
   display: block;
 }
-.error {
-  font-size: 15px;
+#zip-error {
+  font-size: 0.938em;  /* 15px 0.938em @16px */
   color: red;
 }
 
-@media screen and (min-width: 31.25em)/*500px / 16px*/{
-  
-#map {
-  width: 80%;
-  height: 70%;
-  margin: .6em 10%;
-}
+@media screen and (min-width: 31.25em)/*500px / 16px*/ {
 
-p {
-  padding-left: 10%
+  #map {
+    width: 80%;
+    height: 70%;
+    margin: 0.6em 10%;
+  }
+
+  p {
+    padding-left: 10%;
+  }
 }
-}   
-   
