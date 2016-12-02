@@ -8,7 +8,7 @@ $.noConflict();
         $('.error').text('');
        // console.log('got submitted'); 
         var zip = $('#zip').val();
-        var url = 'https://api.zippopotam.us/us/' + zip;
+        var url = 'http://api.zippopotam.us/us/' + zip;
         $.get(url).done(
           function(data,json) {
                   
